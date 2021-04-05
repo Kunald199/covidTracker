@@ -1,0 +1,30 @@
+*{
+  margin:0
+}
+body{
+  background-color:#f5f6fa;
+}
+.App{
+  display:flex; /* Flex bydefault throw it into row*/
+  justify-content: space-evenly;
+  padding:20px;
+}
+.app_left{
+  flex:0.9; /* that flex uses 90% */
+}
+.app_header{
+display:flex; /* default row me display flex */
+justify-content:space-between;   /*space chahiyea between */
+align-items: center;
+margin-bottom: 20px; /* margin add space outside of element whereas heading add space inside the container*/
+}
+
+.app_stats{
+  display:flex;
+  justify-content: space-between;
+}
+@media (max-width:990px){ /*media query mtlb when the screen goes past that 990px..*/
+  .App{
+    flex-direction: column;
+  }
+}
